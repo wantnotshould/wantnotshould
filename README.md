@@ -13,5 +13,3 @@ A bit about me:
 <p>
   <img src="https://skillicons.dev/icons?i=go,php,js,ts,vue,git,linux,mysql,nginx,redis,vscode,md" height="40"/>
 </p>
-
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=wantnotshould)
