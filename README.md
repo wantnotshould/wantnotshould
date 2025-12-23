@@ -2,7 +2,7 @@
 
 ### Hi there, I'm [𝑃𝑒𝑟𝑟𝑦 𝐻𝑒](https://musei.cn) 👋
 
-**Thank you for visiting my GitHub profile. It's a pleasure to meet you here!** 🎉
+**Thanks for checking out my GitHub! Nice to meet you here~** 🎉
 
 A bit about me:
 
