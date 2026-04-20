@@ -186,6 +186,9 @@ span {
   margin-right: 6px;
   color: var(--cdme-accent);
 }
+.container header .logo .cd-me {
+  color: var(--cdme-text);
+}
 .container header .logo .cursor {
   margin-left: 6px;
   color: var(--cdme-accent);
