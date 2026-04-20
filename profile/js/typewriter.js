@@ -50,7 +50,7 @@
         text: 'cd me',
         speed: 150,
         delay: 800,
-        loop: true,
+        loop: false,
         loopDelay: 3000,
       })
     }
