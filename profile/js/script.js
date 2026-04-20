@@ -4,26 +4,36 @@
 
     const welcomeTitles = ['> ./run', 'npm start', '200 OK', 'git pull']
 
+    let titleTimeout
+
+    const clearPendingTitle = () => {
+      if (titleTimeout) {
+        clearTimeout(titleTimeout)
+        titleTimeout = null
+      }
+    }
+
     document.title = `[Running] ${welcomeTitles[Math.floor(Math.random() * welcomeTitles.length)]}`
 
-    setTimeout(() => {
+    titleTimeout = setTimeout(() => {
       document.title = originalTitle
     }, 2000)
 
     document.addEventListener('visibilitychange', function () {
+      clearPendingTitle()
       if (document.hidden) {
         const hiddenTitles = ['Status: 404', 'SIGSTOP', 'Sleep(∞)', 'Pending...', 'Ctrl+Z']
         document.title = hiddenTitles[Math.floor(Math.random() * hiddenTitles.length)]
       } else {
         document.title = 'Hotfix applied. Welcome back!'
 
-        setTimeout(() => {
+        titleTimeout = setTimeout(() => {
           document.title = `stdout > ${originalTitle}`
-        }, 1500)
 
-        setTimeout(() => {
-          document.title = originalTitle
-        }, 3500)
+          titleTimeout = setTimeout(() => {
+            document.title = originalTitle
+          }, 2000)
+        }, 1500)
       }
     })
 
