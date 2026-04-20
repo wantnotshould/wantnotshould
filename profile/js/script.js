@@ -1,6 +1,6 @@
 ;(function () {
   document.addEventListener('DOMContentLoaded', function () {
-    const originalTitle = document.title || 'CDME'
+    const originalTitle = document.title
 
     const welcomeTitles = ['> ./run', 'npm start', '200 OK', 'git pull']
 
