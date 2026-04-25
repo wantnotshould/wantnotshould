@@ -115,6 +115,7 @@ span {
 
     .main {
       display: flex;
+      flex-direction: column;
       flex: 1;
       max-width: 1200px;
       margin: 0 auto;
@@ -191,6 +192,24 @@ span {
           .tips-line {
             width: 100%;
           }
+        }
+      }
+    }
+  }
+
+  .contact {
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 6px;
+      flex-direction: column;
+
+      li a {
+        color: var(--cdme-accent);
+        font-weight: 500;
+
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
